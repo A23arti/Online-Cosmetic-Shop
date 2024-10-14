@@ -1,0 +1,1112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DC496F5-8D3A-4998-A22B-443219ADE449}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Online_Cosmetics_Shop</RootNamespace>
+    <AssemblyName>Online Cosmetics Shop</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1206px-XXXTentacion_signature.svg.png" />
+    <Content Include="Admin Login.aspx" />
+    <Content Include="admindashboard.aspx" />
+    <Content Include="Bill.aspx" />
+    <Content Include="CRdata\ActiveXControls\PrintControl.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_cs.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_da.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_de.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_en.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_es.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_fi.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_fr.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_hu.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_it.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_ja.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_ko.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_nb.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_nl.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_pl.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_pt.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_ru.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_sk.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_sv.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_th.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_tr.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_zh_CN.cab" />
+    <Content Include="CRdata\ActiveXControls\PrintControl_res_zh_TW.cab" />
+    <Content Include="CRdata\allInOne.js" />
+    <Content Include="CRdata\allStrings_cs.js" />
+    <Content Include="CRdata\allStrings_da.js" />
+    <Content Include="CRdata\allStrings_de.js" />
+    <Content Include="CRdata\allStrings_en.js" />
+    <Content Include="CRdata\allStrings_es.js" />
+    <Content Include="CRdata\allStrings_fi.js" />
+    <Content Include="CRdata\allStrings_fr.js" />
+    <Content Include="CRdata\allStrings_hu.js" />
+    <Content Include="CRdata\allStrings_it.js" />
+    <Content Include="CRdata\allStrings_ja.js" />
+    <Content Include="CRdata\allStrings_ko.js" />
+    <Content Include="CRdata\allStrings_nb.js" />
+    <Content Include="CRdata\allStrings_nl.js" />
+    <Content Include="CRdata\allStrings_pl.js" />
+    <Content Include="CRdata\allStrings_pt.js" />
+    <Content Include="CRdata\allStrings_ru.js" />
+    <Content Include="CRdata\allStrings_sk.js" />
+    <Content Include="CRdata\allStrings_sv.js" />
+    <Content Include="CRdata\allStrings_th.js" />
+    <Content Include="CRdata\allStrings_tr.js" />
+    <Content Include="CRdata\allStrings_zh_CN.js" />
+    <Content Include="CRdata\allStrings_zh_TW.js" />
+    <Content Include="CRdata\css\cedefault.css" />
+    <Content Include="CRdata\css\default.css" />
+    <Content Include="CRdata\css\exception.css" />
+    <Content Include="CRdata\css\prompting.css" />
+    <Content Include="CRdata\html\calendar.html" />
+    <Content Include="CRdata\html\calendarbottom.html" />
+    <Content Include="CRdata\html\calendartop.html" />
+    <Content Include="CRdata\images\buttonl.gif" />
+    <Content Include="CRdata\images\buttonm.gif" />
+    <Content Include="CRdata\images\buttonr.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortActive100.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortActive150.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortActive200.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortActive250.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortActive300.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortActive350.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortActive400.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortActive50.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortHover100.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortHover150.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortHover200.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortHover250.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortHover300.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortHover350.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortHover400.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortHover50.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortInactive100.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortInactive150.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortInactive200.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortInactive250.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortInactive300.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortInactive400.gif" />
+    <Content Include="CRdata\images\isort\DownArrowSortInactive50.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortActive100.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortActive150.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortActive200.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortActive250.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortActive300.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortActive350.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortActive400.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortActive50.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortHover100.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortHover150.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortHover200.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortHover250.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortHover300.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortHover350.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortHover400.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortHover50.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortInactive100.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortInactive150.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortInactive200.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortInactive250.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortInactive300.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortInactive400.gif" />
+    <Content Include="CRdata\images\isort\UpArrowSortInactive50.gif" />
+    <Content Include="CRdata\js\calendar.js" />
+    <Content Include="CRdata\js\calendar_param.js" />
+    <Content Include="CRdata\js\crviewerinclude.js" />
+    <Content Include="CRdata\js\crviewer\api.js" />
+    <Content Include="CRdata\js\crviewer\ArgumentNormalizer.js" />
+    <Content Include="CRdata\js\crviewer\bobjcallback.js" />
+    <Content Include="CRdata\js\crviewer\ButtonList.js" />
+    <Content Include="CRdata\js\crviewer\Calendar.js" />
+    <Content Include="CRdata\js\crviewer\Colors.js" />
+    <Content Include="CRdata\js\crviewer\common.js" />
+    <Content Include="CRdata\js\crviewer\crv.js" />
+    <Content Include="CRdata\js\crviewer\Dialogs.js" />
+    <Content Include="CRdata\js\crviewer\dom.js" />
+    <Content Include="CRdata\js\crviewer\encoding.js" />
+    <Content Include="CRdata\js\crviewer\event.js" />
+    <Content Include="CRdata\js\crviewer\GroupTree.js" />
+    <Content Include="CRdata\js\crviewer\GroupTreeListener.js" />
+    <Content Include="CRdata\js\crviewer\GroupTreeNode.js" />
+    <Content Include="CRdata\js\crviewer\html.js" />
+    <Content Include="CRdata\js\crviewer\ImageSprites.js" />
+    <Content Include="CRdata\js\crviewer\images\allInOne.gif" />
+    <Content Include="CRdata\js\crviewer\images\allInOneBG.gif" />
+    <Content Include="CRdata\js\crviewer\images\arrow_button_depressed.gif" />
+    <Content Include="CRdata\js\crviewer\images\arrow_button_hover.gif" />
+    <Content Include="CRdata\js\crviewer\images\breadcrumbSep.gif" />
+    <Content Include="CRdata\js\crviewer\images\calendar.gif" />
+    <Content Include="CRdata\js\crviewer\images\catalyst.gif" />
+    <Content Include="CRdata\js\crviewer\images\clearValues.gif" />
+    <Content Include="CRdata\js\crviewer\images\clear_x.gif" />
+    <Content Include="CRdata\js\crviewer\images\closePanel.gif" />
+    <Content Include="CRdata\js\crviewer\images\delete.gif" />
+    <Content Include="CRdata\js\crviewer\images\drill_cursor.cur" />
+    <Content Include="CRdata\js\crviewer\images\export.gif" />
+    <Content Include="CRdata\js\crviewer\images\filledCircle.gif" />
+    <Content Include="CRdata\js\crviewer\images\first.gif" />
+    <Content Include="CRdata\js\crviewer\images\grouptree_toggle.gif" />
+    <Content Include="CRdata\js\crviewer\images\hollowCircle.gif" />
+    <Content Include="CRdata\js\crviewer\images\last.gif" />
+    <Content Include="CRdata\js\crviewer\images\leftTriangle.gif" />
+    <Content Include="CRdata\js\crviewer\images\line.gif" />
+    <Content Include="CRdata\js\crviewer\images\logo.gif" />
+    <Content Include="CRdata\js\crviewer\images\magnify.gif" />
+    <Content Include="CRdata\js\crviewer\images\min.gif" />
+    <Content Include="CRdata\js\crviewer\images\next.gif" />
+    <Content Include="CRdata\js\crviewer\images\open_parameter_arrow.gif" />
+    <Content Include="CRdata\js\crviewer\images\panelHeaderBG.gif" />
+    <Content Include="CRdata\js\crviewer\images\panelNavigatorItemHL.gif" />
+    <Content Include="CRdata\js\crviewer\images\panelNavigatorItemSelectedBG.gif" />
+    <Content Include="CRdata\js\crviewer\images\panel_toggle.gif" />
+    <Content Include="CRdata\js\crviewer\images\param_datafetching.gif" />
+    <Content Include="CRdata\js\crviewer\images\param_dirty.gif" />
+    <Content Include="CRdata\js\crviewer\images\param_info.gif" />
+    <Content Include="CRdata\js\crviewer\images\param_run.gif" />
+    <Content Include="CRdata\js\crviewer\images\param_warning.gif" />
+    <Content Include="CRdata\js\crviewer\images\plus.gif" />
+    <Content Include="CRdata\js\crviewer\images\prev.gif" />
+    <Content Include="CRdata\js\crviewer\images\print.gif" />
+    <Content Include="CRdata\js\crviewer\images\refresh.gif" />
+    <Content Include="CRdata\js\crviewer\images\rightTriangle.gif" />
+    <Content Include="CRdata\js\crviewer\images\search.gif" />
+    <Content Include="CRdata\js\crviewer\images\separator.gif" />
+    <Content Include="CRdata\js\crviewer\images\StackedTab.gif" />
+    <Content Include="CRdata\js\crviewer\images\style.css" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_background.gif" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_buttongroup_background.gif" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_buttongroup_left.gif" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_buttongroup_right.gif" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_button_depressed.gif" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_button_hover.gif" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_menuarrow_depressed.gif" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_menuarrow_hover.gif" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_pagenav_buttons.gif" />
+    <Content Include="CRdata\js\crviewer\images\toolbar_separator_icon.gif" />
+    <Content Include="CRdata\js\crviewer\images\undo.gif" />
+    <Content Include="CRdata\js\crviewer\images\up.gif" />
+    <Content Include="CRdata\js\crviewer\images\WarningPopupTriangle.gif" />
+    <Content Include="CRdata\js\crviewer\initDhtmlLib.js" />
+    <Content Include="CRdata\js\crviewer\IOAdapters.js" />
+    <Content Include="CRdata\js\crviewer\LeftPanel.js" />
+    <Content Include="CRdata\js\crviewer\OptionalParameterUI.js" />
+    <Content Include="CRdata\js\crviewer\OptionalParameterValueRow.js" />
+    <Content Include="CRdata\js\crviewer\PanelHeader.js" />
+    <Content Include="CRdata\js\crviewer\PanelNavigator.js" />
+    <Content Include="CRdata\js\crviewer\PanelNavigatorItem.js" />
+    <Content Include="CRdata\js\crviewer\Parameter.js" />
+    <Content Include="CRdata\js\crviewer\ParameterController.js" />
+    <Content Include="CRdata\js\crviewer\ParameterDialog.js" />
+    <Content Include="CRdata\js\crviewer\ParameterInfoRow.js" />
+    <Content Include="CRdata\js\crviewer\ParameterPanel.js" />
+    <Content Include="CRdata\js\crviewer\ParameterPanelToolbar.js" />
+    <Content Include="CRdata\js\crviewer\ParameterUI.js" />
+    <Content Include="CRdata\js\crviewer\ParameterValueRow.js" />
+    <Content Include="CRdata\js\crviewer\PromptPage.js" />
+    <Content Include="CRdata\js\crviewer\RangeField.js" />
+    <Content Include="CRdata\js\crviewer\ReportAlbum.js" />
+    <Content Include="CRdata\js\crviewer\ReportPage.js" />
+    <Content Include="CRdata\js\crviewer\ReportView.js" />
+    <Content Include="CRdata\js\crviewer\Separator.js" />
+    <Content Include="CRdata\js\crviewer\SharedWidgetHolder.js" />
+    <Content Include="CRdata\js\crviewer\SignalDisposer.js" />
+    <Content Include="CRdata\js\crviewer\StackedPanel.js" />
+    <Content Include="CRdata\js\crviewer\StackedTab.js" />
+    <Content Include="CRdata\js\crviewer\StateManager.js" />
+    <Content Include="CRdata\js\crviewer\Statusbar.js" />
+    <Content Include="CRdata\js\crviewer\strings_cs.js" />
+    <Content Include="CRdata\js\crviewer\strings_da.js" />
+    <Content Include="CRdata\js\crviewer\strings_de.js" />
+    <Content Include="CRdata\js\crviewer\strings_en.js" />
+    <Content Include="CRdata\js\crviewer\strings_es.js" />
+    <Content Include="CRdata\js\crviewer\strings_fi.js" />
+    <Content Include="CRdata\js\crviewer\strings_fr.js" />
+    <Content Include="CRdata\js\crviewer\strings_hu.js" />
+    <Content Include="CRdata\js\crviewer\strings_it.js" />
+    <Content Include="CRdata\js\crviewer\strings_ja.js" />
+    <Content Include="CRdata\js\crviewer\strings_ko.js" />
+    <Content Include="CRdata\js\crviewer\strings_nb.js" />
+    <Content Include="CRdata\js\crviewer\strings_nl.js" />
+    <Content Include="CRdata\js\crviewer\strings_pl.js" />
+    <Content Include="CRdata\js\crviewer\strings_pt.js" />
+    <Content Include="CRdata\js\crviewer\strings_ru.js" />
+    <Content Include="CRdata\js\crviewer\strings_sk.js" />
+    <Content Include="CRdata\js\crviewer\strings_sv.js" />
+    <Content Include="CRdata\js\crviewer\strings_th.js" />
+    <Content Include="CRdata\js\crviewer\strings_tr.js" />
+    <Content Include="CRdata\js\crviewer\strings_zh_CN.js" />
+    <Content Include="CRdata\js\crviewer\strings_zh_TW.js" />
+    <Content Include="CRdata\js\crviewer\TextCombo.js" />
+    <Content Include="CRdata\js\crviewer\TextField.js" />
+    <Content Include="CRdata\js\crviewer\Toolbar.js" />
+    <Content Include="CRdata\js\crviewer\ToolPanel.js" />
+    <Content Include="CRdata\js\crviewer\Viewer.js" />
+    <Content Include="CRdata\js\crviewer\ViewerFlexParameterAdapter.js" />
+    <Content Include="CRdata\js\crviewer\ViewerListener.js" />
+    <Content Include="CRdata\js\crviewer\WarningPopup.js" />
+    <Content Include="CRdata\js\dhtmllib\bolist.js" />
+    <Content Include="CRdata\js\dhtmllib\calendar.js" />
+    <Content Include="CRdata\js\dhtmllib\dialog.js" />
+    <Content Include="CRdata\js\dhtmllib\dom.js" />
+    <Content Include="CRdata\js\dhtmllib\empty.html" />
+    <Content Include="CRdata\js\dhtmllib\images\borders.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\help.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\loading.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\lov.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\min.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\plus.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\print.css" />
+    <Content Include="CRdata\js\dhtmllib\images\print_fe.css" />
+    <Content Include="CRdata\js\dhtmllib\images\prompt.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\resizepattern.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\bolist.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\button.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\buttonIcons.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\critical_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\dialogelements.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\dialogframe.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\dialogframeleftright.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\dialogframetopbottom.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\dialogtitle.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\down.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\iconsep.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\information_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\left.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\menus.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\node.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\progress.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\resize.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\right.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\scroll_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\sep.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\sep_solid.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\style.css" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\style.js" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\style_fe.css" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\tabs.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\up.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\wait01.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\wait02.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_coloredline\warning_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\bolist.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\button.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\buttonIcons.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\critical_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\dialogelements.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\dialogframe.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\dialogframeleftright.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\dialogframetopbottom.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\dialogtitle.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\down.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\iconsep.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\information_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\left.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\menus.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\node.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\progress.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\resize.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\right.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\scroll_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\sep.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\sep_solid.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\style.css" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\style.js" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\style_fe.css" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\tabs.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\up.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\wait01.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\wait02.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_corporate\warning_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\bolist.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\button.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\buttonIcons.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\critical_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\dialogelements.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\dialogframe.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\dialogframeleftright.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\dialogframetopbottom.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\dialogtitle.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\down.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\iconsep.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\information_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\left.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\menus.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\node.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\progress.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\resize.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\right.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\scroll_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\sep.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\sep_solid.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\style.css" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\style.js" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\style_fe.css" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\tabs.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\up.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\wait01.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\wait02.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_default\warning_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\background_field.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\background_menusel.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\bolist.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\button.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\buttonIcons.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\critical_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\critical_icon.png" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\dialogelements.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\dialogframe.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\dialogframeleftright.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\dialogframetopbottom.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\dialogtitle.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\down.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\hgrab.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\horiz_tabs.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\iconsep.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\information_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\left.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\menuitem_check.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\menus.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\node.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\panemenu.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\panetitle.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\progress.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\resize.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\right.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\scroll_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\sep.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\sep_solid.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\style.css" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\style.js" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\style_fe.css" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\tabs.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\toolbar_elements.png" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\up.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\vgrab.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\wait01.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\wait02.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\skin_standard\warning_icon.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\swap.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\transp.gif" />
+    <Content Include="CRdata\js\dhtmllib\images\tree.gif" />
+    <Content Include="CRdata\js\dhtmllib\language\cs\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\da\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\de\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\en\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\es\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\fi\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\fr\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\hu\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\it\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\ja\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\ko\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\nb\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\nl\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\pl\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\pt\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\ru\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\sk\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\sv\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\th\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\tr\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\zh_CN\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\language\zh_TW\labels.js" />
+    <Content Include="CRdata\js\dhtmllib\lov.js" />
+    <Content Include="CRdata\js\dhtmllib\menu.js" />
+    <Content Include="CRdata\js\dhtmllib\palette.js" />
+    <Content Include="CRdata\js\dhtmllib\prompttree.js" />
+    <Content Include="CRdata\js\dhtmllib\psheet.js" />
+    <Content Include="CRdata\js\dhtmllib\samples\andorwidget.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\basicDialog.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\blockWhileWait.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\bolist.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\borderswidget.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\buttons.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\calendar.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\checktree.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\default.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\dim.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\dim_close.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\dim_o.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\dim_open.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\empty.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\eventsDialog.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\fieldswidget.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\format.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\framezone.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\grabber.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\iconlistpopupwidget.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\iconscrollmenuwidget.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\imgtabs.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\inconwidget.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\infowidget.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\lov.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\measure.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\measure_o.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\menu.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\navigation.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\palettes.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\pane.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\parent_dialog.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\progressBar.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\prompttree.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\qualif.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\scrolltabs.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\simplelist.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\skinIntl.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\tabs.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\textcombowidget.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\tooltipwidget.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\treeicons.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\treeview.html" />
+    <Content Include="CRdata\js\dhtmllib\samples\unv_close.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\unv_o.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\unv_open.gif" />
+    <Content Include="CRdata\js\dhtmllib\samples\waitDialog.html" />
+    <Content Include="CRdata\js\dhtmllib\treeview.js" />
+    <Content Include="CRdata\js\dhtmllib\validator\default.html" />
+    <Content Include="CRdata\js\dhtmllib\validator\validator_res.html" />
+    <Content Include="CRdata\js\dhtmllib\waitdialog.js" />
+    <Content Include="CRdata\js\dt_param.js" />
+    <Content Include="CRdata\js\external\date.js" />
+    <Content Include="CRdata\js\FlexParameterBridge.js" />
+    <Content Include="CRdata\js\KeyDownEvent.js" />
+    <Content Include="CRdata\js\log4javascript\log4javascript.js" />
+    <Content Include="CRdata\js\log4javascript\log4javascript_stub.js" />
+    <Content Include="CRdata\js\log4javascript\log4javascript_stub_uncompressed.js" />
+    <Content Include="CRdata\js\log4javascript\log4javascript_uncompressed.js" />
+    <Content Include="CRdata\js\log4javascript\main.css" />
+    <Content Include="CRdata\js\MochiKit\3rdParty.txt" />
+    <Content Include="CRdata\js\MochiKit\Async.js" />
+    <Content Include="CRdata\js\MochiKit\Base.js" />
+    <Content Include="CRdata\js\MochiKit\Color.js" />
+    <Content Include="CRdata\js\MochiKit\Controls.js" />
+    <Content Include="CRdata\js\MochiKit\DateTime.js" />
+    <Content Include="CRdata\js\MochiKit\DOM.js" />
+    <Content Include="CRdata\js\MochiKit\DragAndDrop.js" />
+    <Content Include="CRdata\js\MochiKit\Format.js" />
+    <Content Include="CRdata\js\MochiKit\Iter.js" />
+    <Content Include="CRdata\js\MochiKit\License.js" />
+    <Content Include="CRdata\js\MochiKit\Logging.js" />
+    <Content Include="CRdata\js\MochiKit\LoggingPane.js" />
+    <Content Include="CRdata\js\MochiKit\MochiKit.js" />
+    <Content Include="CRdata\js\MochiKit\MockDOM.js" />
+    <Content Include="CRdata\js\MochiKit\New.js" />
+    <Content Include="CRdata\js\MochiKit\Signal.js" />
+    <Content Include="CRdata\js\MochiKit\Sortable.js" />
+    <Content Include="CRdata\js\MochiKit\Style.js" />
+    <Content Include="CRdata\js\MochiKit\Test.js" />
+    <Content Include="CRdata\js\MochiKit\Visual.js" />
+    <Content Include="CRdata\js\MochiKit\__package__.js" />
+    <Content Include="CRdata\js\previewerror.js" />
+    <Content Include="CRdata\js\prompts.js" />
+    <Content Include="CRdata\js\prompts_param.js" />
+    <Content Include="CRdata\js\swfobject\swfobject.js" />
+    <Content Include="CRdata\parameterUIController-compressed.js" />
+    <Content Include="CRdata\processindicator.js" />
+    <Content Include="CRdata\promptengine-compressed.js" />
+    <Content Include="CRdata\prompting\css\promptengine2.css" />
+    <Content Include="CRdata\prompting\css\promptengine_default.css" />
+    <Content Include="CRdata\prompting\html\calendar.html" />
+    <Content Include="CRdata\prompting\html\calendarbottom.html" />
+    <Content Include="CRdata\prompting\html\calendartop.html" />
+    <Content Include="CRdata\prompting\images\addallfield.gif" />
+    <Content Include="CRdata\prompting\images\addallfield_over.gif" />
+    <Content Include="CRdata\prompting\images\addfield.gif" />
+    <Content Include="CRdata\prompting\images\addfield_over.gif" />
+    <Content Include="CRdata\prompting\images\back.gif" />
+    <Content Include="CRdata\prompting\images\background_field.gif" />
+    <Content Include="CRdata\prompting\images\back_over.gif" />
+    <Content Include="CRdata\prompting\images\button.gif" />
+    <Content Include="CRdata\prompting\images\button_left_normal.gif" />
+    <Content Include="CRdata\prompting\images\button_middle_normal.gif" />
+    <Content Include="CRdata\prompting\images\button_right_normal.gif" />
+    <Content Include="CRdata\prompting\images\calendar.gif" />
+    <Content Include="CRdata\prompting\images\cfilter.gif" />
+    <Content Include="CRdata\prompting\images\cfilter_over.gif" />
+    <Content Include="CRdata\prompting\images\dialogelements.gif" />
+    <Content Include="CRdata\prompting\images\dialogtitle.gif" />
+    <Content Include="CRdata\prompting\images\error.gif" />
+    <Content Include="CRdata\prompting\images\errormsg.gif" />
+    <Content Include="CRdata\prompting\images\filter.gif" />
+    <Content Include="CRdata\prompting\images\filter_over.gif" />
+    <Content Include="CRdata\prompting\images\forward.gif" />
+    <Content Include="CRdata\prompting\images\forward_over.gif" />
+    <Content Include="CRdata\prompting\images\info.gif" />
+    <Content Include="CRdata\prompting\images\infomsg.gif" />
+    <Content Include="CRdata\prompting\images\minus.gif" />
+    <Content Include="CRdata\prompting\images\next.gif" />
+    <Content Include="CRdata\prompting\images\next_over.gif" />
+    <Content Include="CRdata\prompting\images\plus.gif" />
+    <Content Include="CRdata\prompting\images\prev.gif" />
+    <Content Include="CRdata\prompting\images\prev_over.gif" />
+    <Content Include="CRdata\prompting\images\resize.gif" />
+    <Content Include="CRdata\prompting\images\transp.gif" />
+    <Content Include="CRdata\prompting\images\warning.gif" />
+    <Content Include="CRdata\prompting\images\warningmsg.gif" />
+    <Content Include="CRdata\prompting\js\initDhtmlLib.js" />
+    <Content Include="CRdata\prompting\js\promptengine_calendar.js" />
+    <Content Include="CRdata\prompting\js\promptengine_calendar2.js" />
+    <Content Include="CRdata\prompting\js\promptengine_prompts.js" />
+    <Content Include="CRdata\prompting\js\promptengine_prompts2.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_cs.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_da.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_de.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_en.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_es.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_fi.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_fr.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_hu.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_it.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_ja.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_ko.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_nb.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_nl.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_pl.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_pt.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_ru.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_sk.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_sv.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_th.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_tr.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_zh_CN.js" />
+    <Content Include="CRdata\prompting\js\promptengine_strings_zh_TW.js" />
+    <Content Include="CRdata\urlreporting\activexviewer.js" />
+    <Content Include="CRdata\urlreporting\appletviewer.js" />
+    <Content Include="Customer.aspx" />
+    <Content Include="html\about.html" />
+    <Content Include="html\client.html" />
+    <Content Include="html\contact.html" />
+    <Content Include="html\css\animate.min.css" />
+    <Content Include="html\css\bootstrap-grid.css" />
+    <Content Include="html\css\bootstrap-grid.min.css" />
+    <Content Include="html\css\bootstrap-reboot.css" />
+    <Content Include="html\css\bootstrap-reboot.min.css" />
+    <Content Include="html\css\bootstrap.css" />
+    <Content Include="html\css\bootstrap.min.css" />
+    <Content Include="html\css\default-skin.css" />
+    <Content Include="html\css\font-awesome.min.css" />
+    <Content Include="html\css\icomoon.css" />
+    <Content Include="html\css\jquery-ui.css" />
+    <Content Include="html\css\jquery.fancybox.min.css" />
+    <Content Include="html\css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="html\css\meanmenu.css" />
+    <Content Include="html\css\nice-select.css" />
+    <Content Include="html\css\normalize.css" />
+    <Content Include="html\css\owl.carousel.min.css" />
+    <Content Include="html\css\responsive.css" />
+    <Content Include="html\css\slick.css" />
+    <Content Include="html\css\style.css" />
+    <Content Include="html\images\about-img.png" />
+    <Content Include="html\images\bag-icon.png" />
+    <Content Include="html\images\banner-bg.png" />
+    <Content Include="html\images\banner-img.png" />
+    <Content Include="html\images\call-icon.png" />
+    <Content Include="html\images\client-img.png" />
+    <Content Include="html\images\footer-logo.png" />
+    <Content Include="html\images\img-1.png" />
+    <Content Include="html\images\img-10.png" />
+    <Content Include="html\images\img-11.png" />
+    <Content Include="html\images\img-12.png" />
+    <Content Include="html\images\img-2.png" />
+    <Content Include="html\images\img-21.png" />
+    <Content Include="html\images\img-3.png" />
+    <Content Include="html\images\img-4.png" />
+    <Content Include="html\images\img-5.png" />
+    <Content Include="html\images\img-6.png" />
+    <Content Include="html\images\img-7.png" />
+    <Content Include="html\images\img-8.png" />
+    <Content Include="html\images\img-9.png" />
+    <Content Include="html\images\img3.png" />
+    <Content Include="html\images\logo.png" />
+    <Content Include="html\images\mail-icon.png" />
+    <Content Include="html\images\map-icon.png" />
+    <Content Include="html\images\search-icon.png" />
+    <Content Include="html\images\toggle-icon.png" />
+    <Content Include="html\images\user-icon.png" />
+    <Content Include="html\index.html" />
+    <Content Include="html\js\bootstrap.bundle.js" />
+    <Content Include="html\js\bootstrap.bundle.min.js" />
+    <Content Include="html\js\bootstrap.js" />
+    <Content Include="html\js\bootstrap.min.js" />
+    <Content Include="html\js\custom.js" />
+    <Content Include="html\js\jquery-3.0.0.min.js" />
+    <Content Include="html\js\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="html\js\jquery.min.js" />
+    <Content Include="html\js\jquery.validate.js" />
+    <Content Include="html\js\modernizer.js" />
+    <Content Include="html\js\plugin.js" />
+    <Content Include="html\js\popper.min.js" />
+    <Content Include="html\js\slider-setting.js" />
+    <Content Include="html\products.html" />
+    <Content Include="img1.jpeg" />
+    <Content Include="Item_category.aspx" />
+    <Content Include="Item_Master.aspx" />
+    <Content Include="Receipt.aspx" />
+    <Content Include="Report\Brandmaster_wise_itemmaster.aspx" />
+    <Content Include="Report\Customer_wise_Receipt.aspx" />
+    <Content Include="Report\Customer_wise_SaleMaster.aspx" />
+    <Content Include="Report\datewise_Receipt.aspx" />
+    <Content Include="Report\datewise_SaleMaster.aspx" />
+    <Content Include="Report\frm_BrandMaster.aspx" />
+    <Content Include="Report\frm_Customer.aspx" />
+    <Content Include="Report\frm_ItemCategory.aspx" />
+    <Content Include="Report\frm_Item_master.aspx" />
+    <Content Include="Report\frm_Receipt.aspx" />
+    <Content Include="Report\frm_SaleMaster.aspx" />
+    <Content Include="Report\frm_Sale_Detail.aspx" />
+    <Content Include="Report\ItemCategory_wise_ItemMaster.aspx" />
+    <Content Include="Report\ItemMaster_wise_SaleDetails.aspx" />
+    <Content Include="Report\SaleMaster_wise_SaleDetails.aspx" />
+    <Content Include="Sale_Detail.aspx" />
+    <Content Include="Sale_Master.aspx" />
+    <Content Include="SampleBill.aspx" />
+    <Content Include="Search\Brand_wise_search.aspx" />
+    <Content Include="Search\Cancelcartitem.aspx" />
+    <Content Include="Search\Category_wise_search.aspx" />
+    <Content Include="Search\Customer_dashboard.aspx" />
+    <Content Include="Search\Searchall.aspx" />
+    <Content Include="Search\Searchdetails.aspx" />
+    <Content Include="Search\Searchmaster.aspx" />
+    <Content Include="Search\Showcart.aspx" />
+    <Content Include="Upload\MyGlammLogo.jpg" />
+    <Content Include="User Login.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Brand_Master.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Login.aspx.cs">
+      <DependentUpon>Admin Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin Login.aspx.designer.cs">
+      <DependentUpon>Admin Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admindashboard.aspx.cs">
+      <DependentUpon>admindashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admindashboard.aspx.designer.cs">
+      <DependentUpon>admindashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.aspx.cs">
+      <DependentUpon>Bill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bill.aspx.designer.cs">
+      <DependentUpon>Bill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Item_category.aspx.cs">
+      <DependentUpon>Item_category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Item_category.aspx.designer.cs">
+      <DependentUpon>Item_category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Item_Master.aspx.cs">
+      <DependentUpon>Item_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Item_Master.aspx.designer.cs">
+      <DependentUpon>Item_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Brand_Master.aspx.cs">
+      <DependentUpon>Brand_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Brand_Master.aspx.designer.cs">
+      <DependentUpon>Brand_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.aspx.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Receipt.aspx.designer.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Brandmaster_wise_itemmaster.aspx.cs">
+      <DependentUpon>Brandmaster_wise_itemmaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Brandmaster_wise_itemmaster.aspx.designer.cs">
+      <DependentUpon>Brandmaster_wise_itemmaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Customer_wise_Receipt.aspx.cs">
+      <DependentUpon>Customer_wise_Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Customer_wise_Receipt.aspx.designer.cs">
+      <DependentUpon>Customer_wise_Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Customer_wise_SaleMaster.aspx.cs">
+      <DependentUpon>Customer_wise_SaleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\Customer_wise_SaleMaster.aspx.designer.cs">
+      <DependentUpon>Customer_wise_SaleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\datewise_Receipt.aspx.cs">
+      <DependentUpon>datewise_Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\datewise_Receipt.aspx.designer.cs">
+      <DependentUpon>datewise_Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\datewise_SaleMaster.aspx.cs">
+      <DependentUpon>datewise_SaleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\datewise_SaleMaster.aspx.designer.cs">
+      <DependentUpon>datewise_SaleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_BrandMaster.aspx.cs">
+      <DependentUpon>frm_BrandMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_BrandMaster.aspx.designer.cs">
+      <DependentUpon>frm_BrandMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Customer.aspx.cs">
+      <DependentUpon>frm_Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Customer.aspx.designer.cs">
+      <DependentUpon>frm_Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_ItemCategory.aspx.cs">
+      <DependentUpon>frm_ItemCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_ItemCategory.aspx.designer.cs">
+      <DependentUpon>frm_ItemCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Item_master.aspx.cs">
+      <DependentUpon>frm_Item_master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Item_master.aspx.designer.cs">
+      <DependentUpon>frm_Item_master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Receipt.aspx.cs">
+      <DependentUpon>frm_Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Receipt.aspx.designer.cs">
+      <DependentUpon>frm_Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_SaleMaster.aspx.cs">
+      <DependentUpon>frm_SaleMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_SaleMaster.aspx.designer.cs">
+      <DependentUpon>frm_SaleMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frm_Sale_Detail.aspx.cs">
+      <DependentUpon>frm_Sale_Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\frm_Sale_Detail.aspx.designer.cs">
+      <DependentUpon>frm_Sale_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ItemCategory_wise_ItemMaster.aspx.cs">
+      <DependentUpon>ItemCategory_wise_ItemMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ItemCategory_wise_ItemMaster.aspx.designer.cs">
+      <DependentUpon>ItemCategory_wise_ItemMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ItemMaster_wise_SaleDetails.aspx.cs">
+      <DependentUpon>ItemMaster_wise_SaleDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ItemMaster_wise_SaleDetails.aspx.designer.cs">
+      <DependentUpon>ItemMaster_wise_SaleDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\rpt_BrandMaster.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_BrandMaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Customer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Customer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_ItemCategory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_ItemCategory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_Item_Master.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_Item_Master.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_receipt.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_receipt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_SaleDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SaleDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\rpt_SaleMaster.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_SaleMaster.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\SaleMaster_wise_SaleDetails.aspx.cs">
+      <DependentUpon>SaleMaster_wise_SaleDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\SaleMaster_wise_SaleDetails.aspx.designer.cs">
+      <DependentUpon>SaleMaster_wise_SaleDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sale_Detail.aspx.cs">
+      <DependentUpon>Sale_Detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sale_Detail.aspx.designer.cs">
+      <DependentUpon>Sale_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sale_Master.aspx.cs">
+      <DependentUpon>Sale_Master.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sale_Master.aspx.designer.cs">
+      <DependentUpon>Sale_Master.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleBill.aspx.cs">
+      <DependentUpon>SampleBill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleBill.aspx.designer.cs">
+      <DependentUpon>SampleBill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Brand_wise_search.aspx.cs">
+      <DependentUpon>Brand_wise_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Brand_wise_search.aspx.designer.cs">
+      <DependentUpon>Brand_wise_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Cancelcartitem.aspx.cs">
+      <DependentUpon>Cancelcartitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Cancelcartitem.aspx.designer.cs">
+      <DependentUpon>Cancelcartitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Category_wise_search.aspx.cs">
+      <DependentUpon>Category_wise_search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Category_wise_search.aspx.designer.cs">
+      <DependentUpon>Category_wise_search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Customer_dashboard.aspx.cs">
+      <DependentUpon>Customer_dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Customer_dashboard.aspx.designer.cs">
+      <DependentUpon>Customer_dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Searchall.aspx.cs">
+      <DependentUpon>Searchall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Searchall.aspx.designer.cs">
+      <DependentUpon>Searchall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Searchdetails.aspx.cs">
+      <DependentUpon>Searchdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Searchdetails.aspx.designer.cs">
+      <DependentUpon>Searchdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Searchmaster.aspx.cs">
+      <DependentUpon>Searchmaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Searchmaster.aspx.designer.cs">
+      <DependentUpon>Searchmaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Showcart.aspx.cs">
+      <DependentUpon>Showcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Showcart.aspx.designer.cs">
+      <DependentUpon>Showcart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User Login.aspx.cs">
+      <DependentUpon>User Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User Login.aspx.designer.cs">
+      <DependentUpon>User Login.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="html\css\.DS_Store" />
+    <Content Include="html\css\bootstrap-grid.css.map" />
+    <Content Include="html\css\bootstrap-grid.min.css.map" />
+    <Content Include="html\css\bootstrap-reboot.css.map" />
+    <Content Include="html\css\bootstrap-reboot.min.css.map" />
+    <Content Include="html\css\bootstrap.css.map" />
+    <Content Include="html\css\bootstrap.min.css.map" />
+    <Content Include="html\js\.DS_Store" />
+    <Content Include="html\js\bootstrap.bundle.js.map" />
+    <Content Include="html\js\bootstrap.bundle.min.js.map" />
+    <Content Include="html\js\bootstrap.js.map" />
+    <Content Include="html\js\bootstrap.min.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\rpt_BrandMaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_BrandMaster.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_Customer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Customer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_ItemCategory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_ItemCategory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_Item_Master.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_Item_Master.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_receipt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_receipt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_SaleDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SaleDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpt_SaleMaster.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_SaleMaster.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="html\fonts\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49849</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50582/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
